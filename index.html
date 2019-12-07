@@ -20,12 +20,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <!-- Cards CSS + JS -->
+    <script src="css/card_flip.css"></script>
+    <script src="css/card_hover_shadow.css"></script>
+    <script src="js/card_flip.js"></script>
+    <!-- end cards CSS + JS -->
     <title>Julien Test</title>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light" style="background-color: #e3f2fd;">
+    <nav class="navbar navbar-expand-md navbar-light navbar fixed-top" style="background-color: #e3f2fd;">
         <a class="navbar-brand" href="https://juliens-git.github.io/cat125r/">JS</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,7 +69,7 @@
                 </li>
                 <li  class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  style="font-size: 1.25rem; color: rgba(0,0,0,.9);">
                         <img src="logo_glyphs/twitter.png" width="30" height="30" class="d-inline-block align-top"
                             alt="Twitter_Logo">
                         Twitter
@@ -75,7 +80,7 @@
                             UCSD Sailing
                         </a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">
+                        <a class="dropdown-item" href="#" >
                             <img src="logo_glyphs/twitter.png" width="20" height="20" class="d-inline-block align-top"
                                 alt="Twitter_Logo">
                             Julien Stroumza - coming soon</a>
@@ -107,13 +112,76 @@
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
     <!-- end jumbotron -->
+    <div  style="background-color: #e3f2fd;"> 
+<br>
+    </div>
+<!-- start cards -->
+<div class="card-columns" style="background-color: #e3f2fd;">
+    <div class="card">
+      <img src="images/lks.jpg" class="card-img-top" alt="Li Ka Shing Building">
+      <div class="card-body">
+        <h5 class="card-title">Center For Emerging and Neglected Diseases – UC Berkeley, CA</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+    <div class="card p-3">
+      <blockquote class="blockquote mb-0 card-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <footer class="blockquote-footer">
+          <small class="text-muted">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </small>
+        </footer>
+      </blockquote>
+    </div>
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card bg-primary text-white text-center p-3">
+      <blockquote class="blockquote mb-0">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+        <footer class="blockquote-footer text-white">
+          <small>
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </small>
+        </footer>
+      </blockquote>
+    </div>
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+    </div>
+    <div class="card p-3 text-right">
+      <blockquote class="blockquote mb-0">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <footer class="blockquote-footer">
+          <small class="text-muted">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </small>
+        </footer>
+      </blockquote>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
 
-
-
-
-
-
-    
+<!-- end cards -->
 <!-- start bottom navbar -->
 <footer class="container-fluid text-center" style="background-color: #e3f2fd; padding-top: 10px ; padding-bottom: 5px" >
     <p style="color:rgb(20, 20, 20)">copyright 2019 julien stroumza<br>made using bootstrap 4.4</p>
